@@ -78,6 +78,7 @@ body.dark-theme {
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
+  --button-hover-color: hsl(var(--hue-color), 12%, 20%);
   --body-color: hsl(var(--hue-color), 28%, 12%);
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
@@ -93,12 +94,16 @@ body.dark-theme {
 .change-theme {
   font-size: 1.25rem;
   color: var(--title-color);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
   margin-right: var(--mb-1);
   cursor: pointer;
 }
 
 .change-theme:hover {
   color: var(--first-color);
+  background-color: var(--button-hover-color);
+  transition: 0.15s;
 }
 
 /*================= Base ===============*/
@@ -224,11 +229,12 @@ img {
   font-size: var(--small-font-size);
   color: var(--title-color);
   font-weight: var(--font-medium);
+  transition: color 0.1s;
 }
 
 .nav__link:hover {
   color: var(--first-color);
-  background-color: var(--scroll-bar-color);
+  background-color: var(--button-hover-color);
   transition: 0.15s;
 }
 
@@ -285,10 +291,14 @@ img {
 
 .home__social-icon {
   font-size: 1.05rem;
+  padding: 0.75rem;
+  border-radius: 0.75rem;
   color: var(--first-color);
 }
 .home__social-icon:hover {
   color: var(--first-color-lighter);
+  background-color: var(--button-hover-color);
+  transition: 0.15s;
 }
 
 .home__blob {
@@ -328,10 +338,14 @@ img {
 }
 .home__scroll-button {
   color: var(--first-color);
+  padding: 0.75rem;
+  border-radius: 0.75rem;
   transition: 0.3s;
 }
 .home__scroll-button:hover {
   transform: translateY(0.25rem);
+  background-color: var(--button-hover-color);
+  transition: 0.15s;
 }
 .home__scroll-mouse {
   font-size: 2rem;
