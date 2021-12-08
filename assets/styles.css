@@ -288,7 +288,8 @@ img {
 
 .home__social {
   display: grid;
-  grid-template-columns: max-content;
+  /* Allows for up to eight columns, add more 'max-content' for more columns but they may not fit on standard devices */
+  grid-template-columns: max-content max-content max-content max-content max-content max-content max-content max-content ;
   row-gap: 1rem;
 }
 
@@ -348,7 +349,7 @@ img {
 .home__scroll-button:hover {
   transform: translateY(0.25rem);
   background-color: var(--button-hover-color);
-  transition: 0.15s;
+  transition: 0.3s;
 }
 .home__scroll-mouse {
   font-size: 2rem;
@@ -481,7 +482,7 @@ img {
 
 .skills__arrow {
   margin-left: auto;
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .skills__list {
@@ -1027,6 +1028,9 @@ html {
     width: 240px;
   }
 
+  .home__social {
+    grid-template-columns: max-content;
+  }
   .home__scroll {
     display: block;
   }
@@ -1139,7 +1143,8 @@ html {
   }
 
   .home__social {
-    transform: translateX(-6rem);
+    transform: translateX(-34rem);
+    grid-template-columns: max-content;
   }
 
   .button--white {
