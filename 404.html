@@ -22,11 +22,44 @@
 <body>
     <header class="header" id="header">
         <nav class="nav container">
-            <a href="/" class="nav__logo">Ansh</a>
-
+            <a href="/#" class="nav__logo">Ansh</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="/#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>About
+                        </a>
+                    </li>
+                    <!-- <li class="nav__item">
+                        <a href="/#skills" class="nav__link">
+                            <i class="uil uil-file-alt nav__icon"></i>Skills
+                        </a>
+                    </li> -->
+                    <li class="nav__item">
+                        <a href="/#experience" class="nav__link">
+                            <i class="uil uil-briefcase-alt nav__icon"></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="/#portfolio" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>Portfolio
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
             <div class="nav__btns">
                 <!-- Theme change button -->
                 <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
             </div>
         </nav>
     </header>
@@ -40,7 +73,8 @@
                     <div class="e404__data">
                         <h1 class="e404__title">Oops! You got an Error 404.</h1>
                         <h3 class="e404__subtitle">The page you are looking for does not exist</h3>
-                        <p class="e404__description">You may have clicked on a broken link or that page was removed.</p>
+                        <p class="e404__description">You may have clicked on a broken link or a page that was removed.
+                        </p>
                         <div class="e404__buttons">
                             <a href="/" class="button button--flex">
                                 Go Home
@@ -64,7 +98,19 @@
                 <br>
                 <ul class="footer__links">
                     <li>
-                        <a href="/" class="footer__link">Home</a>
+                        <a href="/#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/#about" class="footer__link">About</a>
+                    </li>
+                    <!-- <li>
+                        <a href="/#skills" class="footer__link">Skills</a>
+                      </li> -->
+                    <li>
+                        <a href="/#experience" class="footer__link">Experience</a>
+                    </li>
+                    <li>
+                        <a href="/#portfolio" class="footer__link">Portfolio</a>
                     </li>
                 </ul>
             </div>
