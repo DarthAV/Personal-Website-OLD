@@ -335,7 +335,7 @@ img {
 
 .home__blob-img {
   width: 369px;
-  transform: scale(.5);
+  transform: scale(0.75);
 }
 
 .home__data {
