@@ -1270,7 +1270,7 @@ html {
   }
 
   .home__social {
-    transform: translateX(-38rem);
+    transform: translateX(-32rem);
     grid-template-columns: max-content;
   }
 
